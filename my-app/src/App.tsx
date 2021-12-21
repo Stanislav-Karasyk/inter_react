@@ -1,9 +1,12 @@
-import React from 'react';
+import PostList from './components/PostList/PostList';
+import posts from "../src/dataBase/posts"
+import PostsByCategory from './components/PostsByCategory/PostsByCategory';
 
 function App() {
   return (
     <>
-      <h1>HELLO</h1>
+      <PostList posts={posts} />
+      <PostsByCategory posts={posts}/>
     </>
   );
 }
