@@ -1,5 +1,16 @@
 .post {
-    background-color: red;
-    border: 1px solid black;
-    
+  width: 400px;
+  height: 50px;
+  padding: 20px;
+  background-color: rgba(182, 198, 199, 0.753);
+  border-radius: 20px;
+
+  &__title {
+    color: rgb(27, 139, 167);
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+  }
 }

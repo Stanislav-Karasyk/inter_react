@@ -1,14 +1,32 @@
-import styles from "./Post.module.scss"
-// import styles2 from "./Post.module.css"
+import styles from "./Post.module.scss";
+import { Component } from "react";
 
 function Post({ title, text }: { title: string; text: string }): JSX.Element {
-    return (
-        <article className={styles.post}>
-            <h4>{title}</h4>
-            <p>{text}</p>
-        </article>
-    )
+  return (
+    <article className={styles.post}>
+      <h4 className={styles.post__title}>{title}</h4>
+      <p className={styles.post__text}>{text}</p>
+    </article>
+  );
 }
 
-export default Post;
+// _____CLASS_____
 
+// interface IProps {
+//   title: string;
+//   text: string;
+// }
+// export class Post extends Component<IProps> {
+//   render() {
+//     const { title, text } = this.props;
+
+//     return (
+//       <article className={styles.post}>
+//         <h4 className={styles.post__title}>{title}</h4>
+//         <p className={styles.post__text}>{text}</p>
+//       </article>
+//     );
+//   }
+// }
+
+export default Post;
